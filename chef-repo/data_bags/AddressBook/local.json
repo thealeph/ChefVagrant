@@ -1,0 +1,11 @@
+{
+  "id" : "local",
+  "build_source": "http://www.cumulogic.com/download/Apps/Granny-Addressbook.zip",
+  "build_local": "//tmp/AddressBook.zip",
+  "app_name": "AddressBook",
+  "app_user": "addressbook",
+  "app_group": "addressbook",
+  "AddressBook_home": "/home/addressbook",
+  "AddressBook_host": "addressbook",
+  "app_path": "/var/lib/tomcat/webapps"
+}

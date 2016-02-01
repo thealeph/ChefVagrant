@@ -1,0 +1,132 @@
+SITE
+  remote: http://supermarket.getchef.com/api/v1
+  specs:
+    apt (2.9.2)
+    bluepill (2.4.1)
+      rsyslog (~> 2.0)
+    build-essential (2.2.4)
+    chef-sugar (3.3.0)
+    ohai (2.1.0)
+    openssl (4.4.0)
+      chef-sugar (>= 3.1.1)
+    packagecloud (0.1.1)
+    rbac (1.0.3)
+    rsyslog (2.2.0)
+    runit (1.7.6)
+      packagecloud (>= 0.0.0)
+    smf (2.2.7)
+      rbac (>= 1.0.1)
+    yum (3.9.0)
+    yum-epel (0.6.5)
+      yum (~> 3.2)
+    yum-mysql-community (0.1.21)
+      yum (>= 3.2)
+
+GIT
+  remote: git://github.com/BackSlasher/chef-selinuxpolicy.git
+  ref: master
+  sha: 5a324693f1e0dcd71b57b29f7686ed82b2b5d3bf
+  specs:
+    selinux-policy (0.9.2)
+
+GIT
+  remote: git://github.com/agileorbit-cookbooks/java.git
+  ref: master
+  sha: 04235005b12a199cb8f3900ab7fc946ed733b289
+  specs:
+    java (1.39.0)
+      apt (>= 0.0.0)
+
+GIT
+  remote: git://github.com/chef-cookbooks/mysql.git
+  ref: master
+  sha: 9bc636a4622b0933f5b55eac0dc4e3e5cb0935cd
+  specs:
+    mysql (6.1.2)
+      smf (>= 0.0.0)
+      yum-mysql-community (>= 0.0.0)
+
+GIT
+  remote: git://github.com/chef-cookbooks/tomcat.git
+  ref: master
+  sha: 5e840eff0b9731a8567dd6366bfeac82b036fcfc
+  specs:
+    tomcat (1.0.1)
+      java (>= 0.0.0)
+      openssl (>= 0.0.0)
+      yum-epel (>= 0.0.0)
+
+GIT
+  remote: git://github.com/gofullstack/tar-cookbook.git
+  ref: master
+  sha: 8d1649d3a4fae2c9737ceb7e29a88d107c517352
+  specs:
+    tar (0.7.0)
+
+GIT
+  remote: git://github.com/jhh/firewalld-cookbook.git
+  ref: master
+  sha: b9059802704e59078306ce178688c499a77ac197
+  specs:
+    firewalld (1.1.1)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/firewall.git
+  ref: master
+  sha: f33312d5d26b763b2ae7b6503fe632b2badd52a3
+  specs:
+    firewall (2.4.0)
+      chef-sugar (>= 0.0.0)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/nginx.git
+  ref: master
+  sha: e36944b0dac1f21044a4f0d01fc566023325cfde
+  specs:
+    nginx (2.7.6)
+      apt (~> 2.2)
+      bluepill (~> 2.3)
+      build-essential (~> 2.0)
+      ohai (~> 2.0)
+      runit (~> 1.2)
+      yum-epel (~> 0.3)
+
+GIT
+  remote: git://github.com/parallels-cookbooks/cookbook-logstash-forwarder.git
+  ref: master
+  sha: d332b83183de19714f00c2c841b46fa4dd076cfa
+  specs:
+    logstash-forwarder (0.2.4)
+      apt (>= 0.0.0)
+      yum (>= 0.0.0)
+
+GIT
+  remote: git://github.com/schubergphilis/nrpe.git
+  ref: master
+  sha: f6b660406cec917000c31c10758d72dfbca52578
+  specs:
+    nrpe (1.5.3)
+      build-essential (>= 0.0.0)
+      yum-epel (>= 0.0.0)
+
+GIT
+  remote: git://github.com/skottler/selinux.git
+  ref: master
+  sha: 1e4498febca633dcf124ae9c86c4d3ca9c27d50f
+  specs:
+    selinux (0.9.0)
+
+DEPENDENCIES
+  firewall (>= 0)
+  firewalld (>= 0)
+  java (>= 0)
+  logstash-forwarder (>= 0)
+  mysql (>= 0)
+  nginx (>= 0)
+  nrpe (>= 0)
+  runit (>= 0)
+  selinux (>= 0)
+  selinux-policy (>= 0)
+  tar (>= 0)
+  tomcat (>= 0)
+

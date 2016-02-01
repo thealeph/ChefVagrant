@@ -1,0 +1,18 @@
+  #!/usr/bin/env ruby
+  #^syntax detection
+
+  site 'http://community.opscode.com/api/v1'
+  site 'http://supermarket.getchef.com/api/v1'
+
+  cookbook 'runit'
+  cookbook 'nginx', :git => 'git://github.com/opscode-cookbooks/nginx.git'
+  cookbook 'tar', :git => 'git://github.com/gofullstack/tar-cookbook.git'
+  cookbook 'nrpe', :git => 'git://github.com/schubergphilis/nrpe.git'
+  cookbook 'java', :git => 'git://github.com/agileorbit-cookbooks/java.git'
+  cookbook 'selinux', :git => 'git://github.com/skottler/selinux.git'
+  cookbook 'selinux-policy', :git => 'git://github.com/BackSlasher/chef-selinuxpolicy.git'
+  cookbook 'firewall', :git => 'git://github.com/opscode-cookbooks/firewall.git'
+  cookbook 'firewalld', :git => 'git://github.com/jhh/firewalld-cookbook.git'
+  cookbook 'mysql', :git => 'git://github.com/chef-cookbooks/mysql.git'
+  cookbook 'tomcat', :git => 'git://github.com/chef-cookbooks/tomcat.git'
+  cookbook 'logstash-forwarder', :git => 'git://github.com/parallels-cookbooks/cookbook-logstash-forwarder.git'

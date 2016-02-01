@@ -1,0 +1,6 @@
+To initialize the vagrant machine:
+cd AddressBook
+vagrant up
+
+To access the website by name, add this line to the hosts file of the local (host) machine
+10.7.7.7	addressbook
